@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Informática</title>
+    <style>
+      /* Agrega tus estilos aquí */
+    </style>
+  </head>
+  <body>
+    <!-- Agrega tu contenido aquí -->
+
+    <h2>Contacto</h2>
+
+    <form id="contact-form">
+      <label for="name">Nombre:</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Correo electrónico:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="message">Mensaje:</label><br />
+      <textarea id="message" name="message"></textarea><br />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <script>
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        alert(`Gracias por tu mensaje, ${name}!`);
+        // Aquí puedes agregar código para enviar el mensaje al servidor
+      });
+
+
+
+
+
+
+
+      
+    </script>
+  </body>
+</html>
